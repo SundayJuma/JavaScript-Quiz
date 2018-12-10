@@ -1,0 +1,346 @@
+/* INDEX.HTML*/
+* ,html,body{
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  text-align: right;
+  font-size: 60px;
+  padding-right: 150px;
+}
+
+form {
+  padding-left: 90px;
+  /*padding:20px 70px 20px 70px;*/
+  /*margin-top: 40%;*/
+}
+
+.container-fluid {
+  height: 100vh;
+
+}
+
+.leftSide {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rightSide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  color: white;
+  background-color: #0a002a;
+}
+
+.studentInput {
+  font-size: 15px;
+  padding-left: 40px;
+  width: 500px;
+  height: 70px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  outline:none;
+  background-color:transperent;
+  border: 1px solid #979797;
+}
+
+.btnQuiz {
+  margin: 0 auto;
+  width: 50%;
+  height: 70px;
+  background-color: #ff533d;
+  border-radius: 0;
+  color: white;
+  border: none;
+  margin-top: 100px;
+
+}
+
+.btnQuiz:hover {
+  background-color: #ff2a0f;
+}
+
+ a {
+   color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/*QUIZ.HTML*/
+h2.panel-title {
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  /*background: #0f1626;*/
+  font-weight: bolder;
+}
+.panel-heading .panel-title{
+  background-color: #ff533d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.answers{
+  background-color: #AB987A;
+
+}
+
+.jumbotron {
+  background-color: #0f1626;
+  margin-top: 120px;
+  text-align: center;
+  color: white;
+  border-radius: 0;
+  padding: 200px;
+  width: 100%;
+  margin-left: 0px;
+}
+.jumbotron p {
+  margin-bottom: 30px;
+}
+
+.button-start{
+  background-color: #ff533d;
+  color: white;
+  /*width: 80px;*/
+  padding: 10px 80px;
+  margin-top: 50px;
+}
+
+a.button-start {
+  text-decoration: none;
+}
+
+a.button-start:hover {
+  color: white;
+}
+
+
+/*QUIZ.HTML*/
+/* The container */
+.container {
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.container-fluid .quiz-page {
+  background-color: #0f1626;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0px;
+}
+html,body {
+   font-family: 'Open Sans', sans-serif;
+}
+.quiz {
+  padding: 200px;
+}
+.panel-body{
+  background-color: #0f1626;
+  color: white;
+}
+.panel-heading{
+  background-color: #ab987a;
+}
+
+.myButton {
+  -moz-box-shadow:inset 2px 2px 25px 8px #ff533d;
+  -webkit-box-shadow:inset 2px 2px 25px 8px #ff533d;
+  box-shadow:inset 2px 2px 25px 8px #ff533d;
+  background-color:transparent;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+  border:1px solid #ff533d;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size:25px;
+  font-weight:bold;
+  font-style:italic;
+  padding:14px 76px;
+  text-decoration:none;
+  text-shadow:0px 1px 10px #ff533d;
+  margin-top: 20px;
+}
+.myButton:hover {
+  background-color:transparent;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+.panel-heading{
+  /*background-color: #ff533d;*/
+  font-weight: 200;
+}
+.panel-body{
+  background-color: #ab987a
+  font-weight: 50;
+}
+
+/*.header {
+  padding: 100px 160px;
+  background: #0f1626;
+  color: #f1f1f1;
+  text-align: center;
+}*/
+
+/* Page content */
+/*.content {
+  padding: 16px;
+}*/
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+/*.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}*/
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+/*.sticky + .content {
+  padding-top: 102px;
+}
+.header h1{
+  font-weight: 500;
+  font-family: sans-serif;
+}/* Popup container */
+/*.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+*/
+/* The actual popup (appears on top) */
+/*.popup .results {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+*/
+/* Popup arrow */
+/*.popup .results::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}*/
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+/*.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}*/
+
+/* Add animation (fade in the popup) */
+/*@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}*/
