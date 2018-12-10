@@ -8,9 +8,14 @@ var qN2 = $("input:radio[name=html]:checked").val();
 var qN3 = $("input:radio[name=css]:checked").val();
 var qN4 = $("input:radio[name=java]:checked").val();
 var qN5 = $("input:radio[name=python]:checked").val();
+var qN6 = $("input:radio[name=string]:checked").val();
+var qN7 = $("input:radio[name=object]:checked").val();
+var qN8 = $("input:radio[name=fixed]:checked").val();
+var qN9 = $("input:radio[name=pitch]:checked").val();
+var qN10 = $("input:radio[name=bold]:checked").val();
 
-var youScore = parseInt(qN1)+parseInt(qN2)+parseInt(qN3)+parseInt(qN4)+parseInt(qN5);
-$("#youScore").text("HEY THERE! THIS IS WHAT YOU SCORED: " + youScore + " marks out of 50 marks");
+var youScore = parseInt(qN1)+parseInt(qN2)+parseInt(qN3)+parseInt(qN4)+parseInt(qN5)+parseInt(qN6)+parseInt(qN7)+parseInt(qN8)+parseInt(qN9)+parseInt(qN10);
+$("#youScore").text("YOU SCORED: " + youScore + " OUT OF 100");
 
 //==== User Interface ====//
 $("form#quizPage").show(1250);
