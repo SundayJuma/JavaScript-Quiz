@@ -79,14 +79,20 @@ a:hover {
 h2.panel-title {
   font-size: 25px;
   text-align: center;
-  color: white;
-  /*background: #0f1626;*/
-  font-weight: bolder;
+  color:black;
+  font-weight:900;
 }
-.panel-heading .panel-title{
-  background-color: #ff533d;
+.panel-title{
+  font-size: 22px;
+  font-weight: bold;
 }
-
+.panel-body{
+  font-size: 18px;
+  font-weight: normal;
+}
+#quizPage{
+  padding: inherit;
+}
 
 
 
