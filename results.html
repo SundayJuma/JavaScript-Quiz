@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.3.1.js"></script>
@@ -12,302 +12,58 @@
   <title>JavaScript Quiz</title>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h2 class="panel-title">JavaScript Quiz Board</h2>
-      </div>
-      <div class="panel-body">
-          <p>The following quiz provides Multiple Choice Questions related to Javascript Framework. You will have to read all the given answers and click over the correct answer. After answering all question, click the submit button to receive your scores.</p>
+  <form id="quizPage">
+        <div id="qOne">
+    <div class="col-md-12"
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h6 class="panel-title">Q 1 - Which of the following is correct about features of JavaScript?</h6>
+        </div>
+        <div class="panel-body">
+          <input type="radio" name="qOne" value="0">JavaScript is a lightweight, interpreted programming language.<br><br>
+          <input type="radio" name="qOne" value="0">JavaScript is designed for creating network-centric applications.<br><br>
+          <input type="radio" name="qOne" value="10">JavaScript is complementary to and integrated with Java.<br><br>
+          <input type="radio" name="qOne" value="0">All of the above.
+            </div>
         </div>
       </div>
+      <button id="next1" class="btn btn-default">Next</button>
     </div>
-<div class="col-md-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h6 class="panel-title">Q 1 - Which of the following is correct about features of JavaScript?</h6>
-    </div>
-    <div class="panel-body">
-<label class="container">JavaScript is a lightweight, interpreted programming language.
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="container">JavaScript is designed for creating network-centric applications.
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container answers" >JavaScript is complementary to and integrated with Java.
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">All of the above.
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-    </div>
+<div id="qTwo">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h6 class="panel-title">Q 2 - Which of the following is the correct syntax to print a page using JavaScript?</h6>
+          </div>
+          <div class="panel-body">
+            <input type="radio" name="qTwo" value="10">window.print();<br><br>
+            <input type="radio" name="qTwo" value="0">browser.print();<br><br>
+            <input type="radio" name="qTwo" value="0">navigator.print();<br><br>
+            <input type="radio" name="qTwo" value="0">document.print();
+            </div>
+          </div>
+        </div>
+        <button id="next2" class="btn btn-default">Previous</button>
+        <button id="previous2" class="btn btn-default">Next</button>
+      </div>
+<div id="qThree">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h6 class="panel-title">Q 3 - Which built-in method calls a function for each element in the array?</h6>
+            </div>
+            <div class="panel-body">
+              <input type="radio" name="qThree" value="0">while()<br><br>
+              <input type="radio" name="qThree" value="0">loop()<br><br>
+              <input type="radio" name="qThree" value="10">forEach()<br><br>
+              <input type="radio" name="qThree" value="0">None of the above.
+            </div>
+            </div>
+          </div>
+          <button id="next3" class="btn btn-default">Previous</button>
+          <button id="previous3" class="btn btn-default">Next</button>
+        </div>
+        </form>
 
-  </div>
-
-</div>
-
-<div class="col-md-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h6 class="panel-title">Q 2 - Which of the following is the correct syntax to print a page using JavaScript?</h6>
-    </div>
-    <div class="panel-body">
-<label class="container answers">window.print();
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="container">browser.print();
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">navigator.print();
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">document.print();
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="col-md-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h6 class="panel-title">Q 3 - Which built-in method calls a function for each element in the array?</h6>
-    </div>
-    <div class="panel-body">
-<label class="container">while()
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="container">loop()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">forEach()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">None of the above.
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="col-md-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h6 class="panel-title">Q 4 - Which built-in method returns the calling string value converted to upper case?</h6>
-    </div>
-    <div class="panel-body">
-<label class="container">toUpperCase()
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="container">toUpper()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">changeCase(case)
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">None of the above.
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="col-md-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h6 class="panel-title">Q 5 - Which of the following function of String object combines the text of two strings and returns a new string?</h6>
-    </div>
-    <div class="panel-body">
-<label class="container">add()
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="container">merge()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">concat()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">append()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="col-md-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h6 class="panel-title">Q 6 - Which of the following function of String object splits a String object into an array of strings by separating the string into substrings?</h6>
-    </div>
-    <div class="panel-body">
-<label class="container">slice()
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="container">split()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">replace()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">search()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="col-md-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h6 class="panel-title">Q 7 - Which of the following function of String object returns the primitive value of the specified object.</h6>
-    </div>
-    <div class="panel-body">
-<label class="container">toLocaleUpperCase()
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="container">toUpperCase()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">toString()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">toString()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="col-md-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h6 class="panel-title">Q 8 - Which of the following function of String object causes a string to be displayed in fixed-pitch font as if it were in a <tt> tag?</h6>
-    </div>
-    <div class="panel-body">
-<label class="container">fixed()
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="container">big()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">blink()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">bold()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="col-md-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h6 class="panel-title">Q 9 - Which of the following function of Array object creates a new array with the results of calling a provided function on every element in this array?</h6>
-    </div>
-    <div class="panel-body">
-<label class="container">push()
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="container">join()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">pop()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">map()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="col-md-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h6 class="panel-title">Q 10 - Which of the following function of Array object sorts the elements of an array?</h6>
-    </div>
-    <div class="panel-body">
-<label class="container">toSource()
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="container">sort()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">toString()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">unshift()
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-    </div>
-
-  </div>
-
-</div>
-
-<button type="submit" name="submit">SUBMIT</button>
-
-
-  </div>
-  </div>
 </body>
 </html>

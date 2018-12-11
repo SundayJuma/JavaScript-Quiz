@@ -104,11 +104,9 @@ h6.panel-title {
   padding: inherit;
 }
 
-/*.displayNone {
-  display: none;
-}*/
+}
 
- .panel-heading {
+ .panel-default>.panel-heading {
    color: white;
  }
 
