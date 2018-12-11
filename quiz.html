@@ -15,233 +15,264 @@
 
 <body>
 
-
+<div id="heading">
   <div class="col-md-12">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h2 class="panel-title">JavaScript Quiz Board</h2>
       </div>
       <div class="panel-body">
-              <p>The following quiz provides Multiple Choice Questions related to Javascript Framework. You will have to read all the given answers and click over the correct answer. After answering all question, click the submit button to receive
-                your scores. You will NOT get YOUR SCORES if you do not answer all questions.</p>
-            </div>
-          </div>
+        <p>The following quiz provides Multiple Choice Questions related to Javascript Framework. You will have to read all the given answers and click over the correct answer. After answering all question, click the submit button to receive
+          your scores. You will NOT get YOUR SCORES if you do not answer all questions.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <form id="quizPage">
+    <div class="questionForm">
+      <div id="qOne">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h6 class="panel-title">Q 1 - Which of the following is correct about features of JavaScript?</h6>
         </div>
-
-<form id="quizPage">
-        <div class="col-md-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h6 class="panel-title">Q 1 - Which of the following is correct about features of JavaScript?</h6>
-            </div>
-            <div class="panel-body">
-              <input type="radio" name="js" value="0">JavaScript is a lightweight, interpreted programming language.<br><br>
+        <div class="panel-body">
+          <input type="radio" name="qOne" value="0">JavaScript is a lightweight, interpreted programming language.<br><br>
 
 
-              <input type="radio" name="js" value="0">JavaScript is designed for creating network-centric applications.<br><br>
+          <input type="radio" name="qOne" value="0">JavaScript is designed for creating network-centric applications.<br><br>
 
-              <input type="radio" name="js" value="10">JavaScript is complementary to and integrated with Java.<br><br>
+          <input type="radio" name="qOne" value="10">JavaScript is complementary to and integrated with Java.<br><br>
 
-              <input type="radio" name="js" value="0">All of the above.
+          <input type="radio" name="qOne" value="0">All of the above.
 
             </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h6 class="panel-title">Q 2 - Which of the following is the correct syntax to print a page using JavaScript?</h6>
-            </div>
-            <div class="panel-body">
-              <input type="radio" name="html" value="10">window.print();<br><br>
-
-              <input type="radio" name="html" value="0">browser.print();<br><br>
-
-              <input type="radio" name="html" value="0">navigator.print();<br><br>
-
-              <input type="radio" name="html" value="0">document.print();
-
-            </div>
-
-          </div>
 
         </div>
 
+      </div>
+      <button id="next1" class="btn btn-default">Next</button>
+
+    </div>
+
+<div id="qTwo">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h6 class="panel-title">Q 2 - Which of the following is the correct syntax to print a page using JavaScript?</h6>
+          </div>
+          <div class="panel-body">
+            <input type="radio" name="qTwo" value="10">window.print();<br><br>
+
+            <input type="radio" name="qTwo" value="0">browser.print();<br><br>
+
+            <input type="radio" name="qTwo" value="0">navigator.print();<br><br>
+
+            <input type="radio" name="qTwo" value="0">document.print();
+
+            </div>
+
+          </div>
+
+        </div>
+          <button id="previous2" class="btn btn-default">Previous</button>
+        <button id="next2" class="btn btn-default">Next</button>
+
+      </div>
+<div id="qThree">
         <div class="col-md-12">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h6 class="panel-title">Q 3 - Which built-in method calls a function for each element in the array?</h6>
             </div>
             <div class="panel-body">
-              <input type="radio" name="css" value="0">while()<br><br>
+              <input type="radio" name="qThree" value="0">while()<br><br>
 
-              <input type="radio" name="css" value="0">loop()<br><br>
+              <input type="radio" name="qThree" value="0">loop()<br><br>
 
-              <input type="radio" name="css" value="10">forEach()<br><br>
+              <input type="radio" name="qThree" value="10">forEach()<br><br>
 
-              <input type="radio" name="css" value="0">None of the above.
+              <input type="radio" name="qThree" value="0">None of the above.
+
+            </div>
 
             </div>
 
           </div>
+            <button id="previous3" class="btn btn-default">Previous</button>
+          <button id="next3" class="btn btn-default">Next</button>
 
         </div>
+<div id="qFour">
+           <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h6 class="panel-title">Q 4 - Which built-in method returns the calling string value converted to upper case?</h6>
+              </div>
+              <div class="panel-body">
+                <input type="radio" name="qFour" value="10">toUpperCase()<br><br>
 
-        <div class="col-md-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h6 class="panel-title">Q 4 - Which built-in method returns the calling string value converted to upper case?</h6>
+                <input type="radio" name="qFour" value="0">toUpper()<br><br>
+
+                <input type="radio" name="qFour" value="0">changeCase(case)<br><br>
+
+                <input type="radio" name="qFour" value="0">None of the above.
+
             </div>
-            <div class="panel-body">
-              <input type="radio" name="java" value="10">toUpperCase()<br><br>
 
-             <input type="radio" name="java" value="0">toUpper()<br><br>
+              </div>
 
-              <input type="radio" name="java" value="0">changeCase(case)<br><br>
+            </div>
+            <button id="previous4" class="btn btn-default">Previous</button>
+          <button id="next4" class="btn btn-default">Next</button>
+        </div>
+<div id="qFive">
+            <div class="col-md-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h6 class="panel-title">Q 5 - Which of the following function of String object combines the text of two strings and returns a new string?</h6>
+                </div>
+                <div class="panel-body">
+                  <input type="radio" name="qFive" value="0">add()<br><br>
 
-              <input type="radio" name="java" value="0">None of the above.
+                  <input type="radio" name="qFive" value="0">merge()<br><br>
+
+                  <input type="radio" name="qFive" value="10">concat()<br><br>
+
+                  <input type="radio" name="qFive" value="0">append()
 
             </div>
 
+                </div>
+
+              </div>
+              <button id="previous5" class="btn btn-default">Previous</button>
+            <button id="next5" class="btn btn-default">Next</button>
           </div>
+<div id="qSix">
+              <div class="col-md-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h6 class="panel-title">Q 6 - Which of the following function of String object splits a String object into an array of strings by separating the string into substrings?</h6>
+                  </div>
+                  <div class="panel-body">
+                    <input type="radio" name="qSix" value="0">slice()<br><br>
 
-        </div>
+                    <input type="radio" name="qSix" value="10">split()<br><br>
 
-        <div class="col-md-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h6 class="panel-title">Q 5 - Which of the following function of String object combines the text of two strings and returns a new string?</h6>
-            </div>
-            <div class="panel-body">
-              <input type="radio" name="python" value="0">add()<br><br>
+                    <input type="radio" name="qSix" value="0">replace()<br><br>
 
-              <input type="radio" name="python" value="0">merge()<br><br>
-
-              <input type="radio" name="python" value="10">concat()<br><br>
-
-              <input type="radio" name="python" value="0">append()
+                    <input type="radio" name="qSix" value="0">search()<br><br>
 
             </div>
 
-          </div>
+                  </div>
 
-        </div>
-
-        <div class="col-md-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h6 class="panel-title">Q 6 - Which of the following function of String object splits a String object into an array of strings by separating the string into substrings?</h6>
+                </div>
+                <button id="previous6" class="btn btn-default">Previous</button>
+              <button id="next6" class="btn btn-default">Next</button>
             </div>
-            <div class="panel-body">
-                <input type="radio" name="string" value="0">slice()<br><br>
+<div id="qSeven">
+                <div class="col-md-12">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h6 class="panel-title">Q 7 - Which of the following function of String object returns the primitive value of the specified object.</h6>
+                    </div>
+                    <div class="panel-body">
+                      <input type="radio" name="qSeven" value="0">toLocaleUpperCase()<br><br>
 
-                <input type="radio" name="string" value="10">split()<br><br>
+                      <input type="radio" name="qSeven" value="0">toUpperCase()<br><br>
 
-                <input type="radio" name="string" value="0">replace()<br><br>
+                      <input type="radio" name="qSeven" value="10">toString()<br><br>
 
-                <input type="radio" name="string" value="0">search()<br><br>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h6 class="panel-title">Q 7 - Which of the following function of String object returns the primitive value of the specified object.</h6>
-            </div>
-            <div class="panel-body">
-                <input type="radio" name="object" value="0">toLocaleUpperCase()<br><br>
-
-                <input type="radio" name="object" value="0">toUpperCase()<br><br>
-
-                <input type="radio" name="object" value="10">toString()<br><br>
-
-                <input type="radio" name="object" value="0">toSting()<br><br>
+                      <input type="radio" name="qSeven" value="0">toSting()<br><br>
 
             </div>
 
-          </div>
+                    </div>
 
-        </div>
+                  </div>
+                  <button id="previous6" class="btn btn-default">Previous</button>
+                <button id="next6" class="btn btn-default">Next</button>
+              </div>
+              <div 
 
-        <div class="col-md-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h6 class="panel-title">Q 8 - Which of the following function of String object causes a string to be displayed in fixed-pitch font as if it were in a <tt> tag?</h6>
-            </div>
-            <div class="panel-body">
-                <input type="radio" name="fixed" value="10">fixed()<br><br>
+                  <div class="col-md-12">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h6 class="panel-title">Q 8 - Which of the following function of String object causes a string to be displayed in fixed-pitch font as if it were in a <tt> tag?</h6>
+                      </div>
+                      <div class="panel-body">
+                        <input type="radio" name="fixed" value="10">fixed()<br><br>
 
-                <input type="radio" name="fixed" value="0">big()<br><br>
+                        <input type="radio" name="fixed" value="0">big()<br><br>
 
-                <input type="radio" name="fixed" value="0">blink()<br><br>
+                        <input type="radio" name="fixed" value="0">blink()<br><br>
 
-                <input type="radio" name="fixed" value="0">bold()<br><br>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h6 class="panel-title">Q 9 - Which of the following function of Array object creates a new array with the results of calling a provided function on every element in this array?</h6>
-            </div>
-            <div class="panel-body">
-                <input type="radio" name="pitch" value="0">push()<br><br>
-
-                <input type="radio" name="pitch" value="0">join()<br><br>
-
-                <input type="radio" name="pitch" value="0">pop()<br><br>
-
-                <input type="radio" name="pitch" value="10">map()<br><br>
+                        <input type="radio" name="fixed" value="0">bold()<br><br>
 
             </div>
 
-          </div>
+                      </div>
 
-        </div>
+                    </div>
 
-        <div class="col-md-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h6 class="panel-title">Q 10 - Which of the following function of Array object sorts the elements of an array?</h6>
+                    <div class="col-md-12">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h6 class="panel-title">Q 9 - Which of the following function of Array object creates a new array with the results of calling a provided function on every element in this array?</h6>
+                        </div>
+                        <div class="panel-body">
+                          <input type="radio" name="pitch" value="0">push()<br><br>
+
+                          <input type="radio" name="pitch" value="0">join()<br><br>
+
+                          <input type="radio" name="pitch" value="0">pop()<br><br>
+
+                          <input type="radio" name="pitch" value="10">map()<br><br>
+
             </div>
-            <div class="panel-body">
-                <input type="radio" name="bold" value="0">toSource()<br><br>
 
-                <input type="radio" name="bold" value="0">sort()<br><br>
+                        </div>
 
-                <input type="radio" name="bold" value="0">toString()<br><br>
+                      </div>
 
-                <input type="radio" name="bold" value="10">unshift()<br><br>
+                      <div class="col-md-12">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h6 class="panel-title">Q 10 - Which of the following function of Array object sorts the elements of an array?</h6>
+                          </div>
+                          <div class="panel-body">
+                            <input type="radio" name="bold" value="0">toSource()<br><br>
+
+                            <input type="radio" name="bold" value="0">sort()<br><br>
+
+                            <input type="radio" name="bold" value="0">toString()<br><br>
+
+                            <input type="radio" name="bold" value="10">unshift()<br><br>
 
             </div>
 
-          </div>
+                          <!-- </div> -->
 
-        </div>
-<div class="row">
-<div class="col-md-6">
+                        <!-- </div> -->
 
-<div id="submit">
-  <button type="submit" class="myButton">SUBMIT</button>
-</div>
-</div>
-<div class="col-md-6">
-<div id="youScore"></div>
-<p><a href="index.html" button type="retry" class="myButton">Retry!</a></p>
-</div>
-</div>
-</form>
+
+                        <div class="row result">
+                          <div class="col-md-6">
+
+                            <div id="submit">
+                              <button type="submit" class="myButton">SUBMIT</button>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div id="youScore"></div>
+                            <p><a href="index.html" button type="retry" class="myButton retryBtn">Retry!</a></p>
+                          </div>
+                        </div>
+            </div>
+  </form>
 
 
 </body>
