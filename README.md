@@ -42,7 +42,12 @@ Basic Git knowledge, including an installed version of Git.
   ## Behavior Driven Development
 
   #### Website Specifications
-
+|     INPUT                                  |      OUTPUT
+|--------------------------------------------|-------------------------------------------------------|
+|Fill in your Name and Class then click start quiz| Takes you to quiz page with questions and answers|
+|Answer all questios| Get scored or marks for each question|
+|Submit your answers|View your scores/marks|
+|Click on the Retry button|Takes you back to the start page to retry the quiz|
 
   ----------------------------------------------------------------------------------------------
 
