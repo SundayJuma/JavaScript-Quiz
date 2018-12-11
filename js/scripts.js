@@ -15,7 +15,6 @@ $(document).ready(function() {
   $('#next2').click(function() {
     var q2 = $("input:radio[name=qTwo]:checked").val();
     $('#qThree').show();
-    $('.result').show();
     $('#qTwo').hide();
   });
 
@@ -27,8 +26,8 @@ $(document).ready(function() {
 
   $('#next3').click(function() {
     var q3 = $("input:radio[name=qThree]:checked").val();
-    $('#qThree').show();
-    $('#qTwo').hide();
+    $('#qFour').show();
+    $('#qThree').hide();
   });
 
   $('#previous3').click(function() {
@@ -36,19 +35,105 @@ $(document).ready(function() {
     $('#qTwo').show();
     $('#qThree').hide();
   });
+  $('#next4').click(function() {
+    var q4 = $("input:radio[name=qFour]:checked").val();
+    $('#qFive').show();
+    $('#qFour').hide();
+  });
 
-
-  $('#submit button').click(function() {
-
+  $('#previous4').click(function() {
+    var q4 = $("input:radio[name=qFour]:checked").val();
     $('#qThree').show();
-    $('#qTwo').hide();
+    $('#qFour').hide();
   });
 
-  $('.retryBtn').click(function() {
-    var q3 = $("input:radio[name=qThree]:checked").val();
-    $('#qTwo').show();
-    $('#qThree').hide();
+  $('#next5').click(function() {
+    var q5 = $("input:radio[name=qFive]:checked").val();
+    $('#qSix').show();
+    $('#qFive').hide();
   });
+
+  $('#previous5').click(function() {
+    var q2 = $("input:radio[name=qFive]:checked").val();
+    $('#qFour').show();
+    $('#qFive').hide();
+  });
+
+  $('#next6').click(function() {
+    var q6 = $("input:radio[name=qSix]:checked").val();
+    $('#qSeven').show();
+    $('#qSix').hide();
+  });
+
+  $('#previous6').click(function() {
+    var q6 = $("input:radio[name=qSix]:checked").val();
+    $('#qFive').show();
+    $('#qSix').hide();
+  });
+
+  $('#next7').click(function() {
+    var q7 = $("input:radio[name=qSeven]:checked").val();
+    $('#qEight').show();
+    $('#qSeven').hide();
+  });
+
+  $('#previous7').click(function() {
+    var q7 = $("input:radio[name=qSeven]:checked").val();
+    $('#qSix').show();
+    $('#qSeven').hide();
+  });
+
+  $('#next8').click(function() {
+    var q8 = $("input:radio[name=qEight]:checked").val();
+    $('#qNine').show();
+        $('#qEight').hide();
+  });
+
+  $('#previous8').click(function() {
+    var q8 = $("input:radio[name=qEight]:checked").val();
+    $('#qSeven').show();
+    $('#qEight').hide();
+  });
+
+
+  $('#next9').click(function() {
+    var q9 = $("input:radio[name=qNine]:checked").val();
+    $('#qTen').show();
+    $(".result").show();
+    $("#youScore").hide();
+      $('#qNine').hide();
+  });
+
+  $('#previous9').click(function() {
+    var q9 = $("input:radio[name=qNine]:checked").val();
+    $('#qEight').show();
+    $('#qNine').hide();
+  });
+
+  // $('#next10').click(function() {
+  //   var q10 = $("input:radio[name=qTen]:checked").val();
+  //   $('#qTen').show();
+  //     $('#qNine').hide();
+  // });
+
+  // $('#previous10').click(function() {
+  //   var q10 = $("input:radio[name=qTen]:checked").val();
+  //   $('#qOne').show();
+  //   $('#qTwo').hide();
+  // });
+
+  //
+  // $('#submit button').click(function() {
+  //
+  //   $('#qThree').show();
+  //   $('#qTwo').hide();
+  // });
+  //
+  // $('.retryBtn').click(function() {
+  //   var q3 = $("input:radio[name=qThree]:checked").val();
+  //   $('#qTwo').show();
+  //   $('#qThree').hide();
+  // });
 
 
 $("form#quizPage").submit(function(event){
@@ -62,6 +147,7 @@ var q7 = $("input:radio[name=qSeven]:checked").val();
 var q8 = $("input:radio[name=qEight]:checked").val();
 var q9 = $("input:radio[name=qNine]:checked").val();
 var q10 = $("input:radio[name=qTen]:checked").val();
+$("#youScore").show();
 
 var youScore = parseInt(q1)+parseInt(q2)+parseInt(q3)+parseInt(q4)+parseInt(q5)+parseInt(q6)+parseInt(q7)+parseInt(q8)+parseInt(q9)+parseInt(q10);
 $("#youScore").text("YOU SCORED: " + youScore + " OUT OF 100");
