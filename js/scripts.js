@@ -2,22 +2,90 @@
 
 $(document).ready(function() {
 
-$("form#quizPage").submit(function(event){
-var qN1 = $("input:radio[name=js]:checked").val();
-var qN2 = $("input:radio[name=html]:checked").val();
-var qN3 = $("input:radio[name=css]:checked").val();
-var qN4 = $("input:radio[name=java]:checked").val();
-var qN5 = $("input:radio[name=python]:checked").val();
-var qN6 = $("input:radio[name=string]:checked").val();
-var qN7 = $("input:radio[name=object]:checked").val();
-var qN8 = $("input:radio[name=fixed]:checked").val();
-var qN9 = $("input:radio[name=pitch]:checked").val();
-var qN10 = $("input:radio[name=bold]:checked").val();
+  var score = 0;
 
-var youScore = parseInt(qN1)+parseInt(qN2)+parseInt(qN3)+parseInt(qN4)+parseInt(qN5)+parseInt(qN6)+parseInt(qN7)+parseInt(qN8)+parseInt(qN9)+parseInt(qN10);
+  $("#qTwo,#qThree,#qFour,#qFive,#qSix,#qSeven,#qEight,#qNine,#qTen,.result").hide();
+
+  $('#next1').click(function() {
+    var q1 = $("input:radio[name=qOne]:checked").val();
+    $('#qTwo').show();
+    $('#qOne').hide();
+  });
+
+  $('#next2').click(function() {
+    var q2 = $("input:radio[name=qTwo]:checked").val();
+    $('#qThree').show();
+    $('.result').show();
+    $('#qTwo').hide();
+  });
+
+  $('#previous2').click(function() {
+    var q2 = $("input:radio[name=qTwo]:checked").val();
+    $('#qOne').show();
+    $('#qTwo').hide();
+  });
+
+  $('#next3').click(function() {
+    var q3 = $("input:radio[name=qThree]:checked").val();
+    $('#qThree').show();
+    $('#qTwo').hide();
+  });
+
+  $('#previous3').click(function() {
+    var q3 = $("input:radio[name=qThree]:checked").val();
+    $('#qTwo').show();
+    $('#qThree').hide();
+  });
+
+
+  $('#submit button').click(function() {
+
+    $('#qThree').show();
+    $('#qTwo').hide();
+  });
+
+  $('.retryBtn').click(function() {
+    var q3 = $("input:radio[name=qThree]:checked").val();
+    $('#qTwo').show();
+    $('#qThree').hide();
+  });
+
+
+$("form#quizPage").submit(function(event){
+var q1 = $("input:radio[name=qOne]:checked").val();
+var q2 = $("input:radio[name=qTwo]:checked").val();
+var q3 = $("input:radio[name=qThree]:checked").val();
+var q4 = $("input:radio[name=qFour]:checked").val();
+var q5 = $("input:radio[name=qFive]:checked").val();
+var q6 = $("input:radio[name=qSix]:checked").val();
+var q7 = $("input:radio[name=qSeven]:checked").val();
+var q8 = $("input:radio[name=qEight]:checked").val();
+var q9 = $("input:radio[name=qNine]:checked").val();
+var q10 = $("input:radio[name=qTen]:checked").val();
+
+var youScore = parseInt(q1)+parseInt(q2)+parseInt(q3)+parseInt(q4)+parseInt(q5)+parseInt(q6)+parseInt(q7)+parseInt(q8)+parseInt(q9)+parseInt(q10);
 $("#youScore").text("YOU SCORED: " + youScore + " OUT OF 100");
 
 //==== User Interface ====//
+
+// $(".buttons").click(function () {
+//      var divname= this.value;
+//        $("#"+divname).show("slow").siblings().hide("slow");
+//      });
+// $('.questionForm #next1').click(function() {
+//   var q1 = $("input:radio[name=qOne]:checked").val();
+//   $('.questionForm#qOne').show();
+//   $('.questionForm#qTwo').hide();
+//
+//
+// $('.questionForm #next2').click(function() {
+//   var q2 = $("input:radio[name=qTwo]:checked").val();
+//   $('.questionForm#qTwo').show();
+//   $('.questionForm#qThree').hide();
+
+
+
+
 $("form#quizPage").show(1250);
 $("#youScore").show(3000);
 event.preventDefault();
