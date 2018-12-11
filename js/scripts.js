@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   var score = 0;
 
-  $("#qTwo,#qThree,#qFour,#qFive,#qSix,#qSeven,#qEight,#qNine,#qTen,#submit,#youScore,#retry").hide();
+  $("#qTwo,#qThree,#qFour,#qFive,#qSix,#qSeven,#qEight,#qNine,#qTen,.result").hide();
 
   $('#next1').click(function() {
     var q1 = $("input:radio[name=qOne]:checked").val();
@@ -99,8 +99,8 @@ $(document).ready(function() {
   $('#next9').click(function() {
     var q9 = $("input:radio[name=qNine]:checked").val();
     $('#qTen').show();
-    $('#retry').show();
-    $('#submit').show();
+    $(".result").show();
+    $("#youScore").show();
       $('#qNine').hide();
   });
 
@@ -109,6 +109,7 @@ $(document).ready(function() {
     $('#qEight').show();
     $('#qNine').hide();
   });
+
 
 $("form#quizPage").submit(function(event){
 var q1 = $("input:radio[name=qOne]:checked").val();
@@ -121,15 +122,16 @@ var q7 = $("input:radio[name=qSeven]:checked").val();
 var q8 = $("input:radio[name=qEight]:checked").val();
 var q9 = $("input:radio[name=qNine]:checked").val();
 var q10 = $("input:radio[name=qTen]:checked").val();
+$("#youScore").show();
 
 var youScore = parseInt(q1)+parseInt(q2)+parseInt(q3)+parseInt(q4)+parseInt(q5)+parseInt(q6)+parseInt(q7)+parseInt(q8)+parseInt(q9)+parseInt(q10);
 $("#youScore").text("YOU SCORED: " + youScore + " OUT OF 100");
-
 
 //==== User Interface ====//
 
 
 $("form#quizPage").show(1250);
+$("#youScore").show(3000);
 event.preventDefault();
 });
 
