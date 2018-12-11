@@ -12,8 +12,6 @@ h1 {
 
 form {
   padding-left: 90px;
-  /*padding:20px 70px 20px 70px;*/
-  /*margin-top: 40%;*/
 }
 
 .container-fluid {
@@ -76,11 +74,19 @@ a:hover {
 }
 
 /*QUIZ.HTML*/
+.panel {
+  width: 50%;
+  margin-left: 25%;
+}
+
 h2.panel-title {
   font-size: 25px;
   text-align: center;
-  color:black;
+  color:white;
   font-weight:900;
+}
+h6.panel-title {
+  font-weight: 700;
 }
 .panel-heading {
   background-color: #ff533d;
@@ -97,90 +103,15 @@ h2.panel-title {
 #quizPage{
   padding: inherit;
 }
-/*#qOne form#qTwo form#qThree{
+
+.displayNone {
   display: none;
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.answers{
-  background-color: #AB987A;
-
 }
 
-.jumbotron {
-  background-color: #0f1626;
-  margin-top: 120px;
-  text-align: center;
-  color: white;
-  border-radius: 0;
-  padding: 200px;
-  width: 100%;
-  margin-left: 0px;
-}
-.jumbotron p {
-  margin-bottom: 30px;
-}
+ .panel-default>.panel-heading {
+   color: white;
+ }
 
-.button-start{
-  background-color: #ff533d;
-  color: white;*/
-  /*width: 80px;*/
-  /*padding: 10px 80px;
-  margin-top: 50px;
-}
-
-a.button-start {
-  text-decoration: none;
-}
-
-a.button-start:hover {
-  color: white;
-}*/
-
-
-/*QUIZ.HTML*/
-/* The container */
-/*.container {
-    font-family: 'Open Sans', sans-serif;
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-}*/
-
-
-/*.container-fluid .quiz-page {
-  background-color: #0f1626;
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 0px;
-}
-html,body {
-   font-family: 'Open Sans', sans-serif;
-}
-.quiz {
-  padding: 200px;
-}*/
 .panel-body{
   background-color: white;
   color: black;
@@ -190,119 +121,43 @@ html,body {
 }
 
 .myButton {
-  -moz-box-shadow:inset 2px 2px 25px 8px #ff533d;
-  -webkit-box-shadow:inset 2px 2px 25px 8px #ff533d;
-  box-shadow:inset 2px 2px 25px 8px #ff533d;
-  background-color:transparent;
-  -moz-border-radius:4px;
-  -webkit-border-radius:4px;/*#qOne form#qTwo form#qThree{
-  display: none;
-}*/
-  border-radius:4px;
-  border:1px solid #ff533d;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family: 'Open Sans', sans-serif;
-  font-size:25px;
-  font-weight:bold;
-  font-style:italic;
-  padding:14px 76px;
-  text-decoration:none;
-  text-shadow:0px 1px 10px #ff533d;
-  margin-top: 20px;
+  margin-left: 60%;
+  border-radius: none;
+  width: 30%;
+  background-color: #ff533d;
+  height: 60px;
+  color: white;
 }
-.myButton:hover {
-  background-color:transparent;
+
+button#retry {
+  margin-left: 5%;
 }
+
 .myButton:active {
   position:relative;
   top:1px;
 }
-/*.panel-heading{*/
-  /*background-color: #ff533d;*/
-  /*font-weight: 200;
+
+.btn.btn-default {
+  margin-left: 27%;
+  border-radius: none;
+  width: 10%;
+  background-color: #ff533d;
+  height: 60px;
+  color: white;
 }
-.panel-body{
-  background-color: #ab987a
-  font-weight: 50;
-}*/
 
-/*.header {
-  padding: 100px 160px;
-  background: #0f1626;
-  color: #f1f1f1;
-  text-align: center;
-}*/
-
-/* Page content */
-/*.content {
-  padding: 16px;
-}*/
-
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-/*.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}*/
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-/*.sticky + .content {
-  padding-top: 102px;
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 10px;
 }
-.header h1{
-  font-weight: 500;
-  font-family: sans-serif;
-}/* Popup container */
-/*.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-*/
-/* The actual popup (appears on top) */
-/*.popup .results {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
+
+div#youScore {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
+  top: 200%;
+  right:80%;
+  width:50%;
+  text-align: center;
 }
-*/
-/* Popup arrow */
-/*.popup .results::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}*/
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-/*.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
-}*/
-
-/* Add animation (fade in the popup) */
-/*@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}*/
