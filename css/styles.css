@@ -1,5 +1,5 @@
 /* INDEX.HTML*/
-* ,html,body{
+*, html, body {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -16,7 +16,6 @@ form#details {
 
 .container-fluid {
   height: 100vh;
-
 }
 
 .leftSide {
@@ -25,7 +24,8 @@ form#details {
   flex-direction: column;
   justify-content: center;
 }
-.rightSide{
+
+.rightSide {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,8 +42,8 @@ form#details {
   height: 70px;
   margin-bottom: 60px;
   border-radius: 10px;
-  outline:none;
-  background-color:transperent;
+  outline: none;
+  background-color: transperent;
   border: 1px solid #979797;
 }
 
@@ -56,15 +56,14 @@ form#details {
   color: white;
   border: none;
   margin-top: 100px;
-
 }
 
 .btnQuiz:hover {
   background-color: #ff2a0f;
 }
 
- a {
-   color: white;
+a {
+  color: white;
   text-decoration: none;
 }
 
@@ -82,38 +81,44 @@ a:hover {
 h2.panel-title {
   font-size: 25px;
   text-align: center;
-  color:white;
-  font-weight:900;
+  color: white;
+  font-weight: 900;
 }
+
 h6.panel-title {
   font-weight: 700;
 }
+
 .panel-heading {
   background-color: #ff533d;
 }
-.panel-title{
+
+.panel-title {
   font-size: 22px;
   font-weight: bold;
   background-color: #ff533d;
 }
-.panel-body{
+
+.panel-body {
   font-size: 18px;
   font-weight: normal;
 }
-form#quizPage{
+
+form#quizPage {
   background-color: #0f1626;
-  }
+  border: inherit;
+}
 
+.panel-default>.panel-heading {
+  color: white;
+}
 
- .panel-default>.panel-heading {
-   color: white;
- }
-
-.panel-body{
+.panel-body {
   background-color: white;
   color: black;
 }
-.panel-heading .panel-footer{
+
+.panel-heading .panel-footer {
   background-color: #ff533d;
 }
 
@@ -131,8 +136,8 @@ button#retry {
 }
 
 .myButton:active {
-  position:relative;
-  top:1px;
+  position: relative;
+  top: 1px;
 }
 
 .btn.btn-default {
@@ -154,27 +159,28 @@ div#youScore {
   line-height: 1.2;
   position: absolute;
   top: 200%;
-  right:80%;
-  width:50%;
+  right: 80%;
+  width: 50%;
   text-align: center;
   color: white;
   background-color: #0f1626;
 }
 
-.questionForm{
+.questionForm {
   background-color: #0f1626;
   margin-top: 100px;
 }
-.jumbotron{
+
+.jumbotron {
   margin-top: 150px;
   text-align: center;
   background-color: #0f1626;
   color: white;
 }
-#start{
+
+#start {
   padding-left: 8%;
   padding-right: 12%;
   font-size: 25px;
   font-weight: 600;
-
 }
