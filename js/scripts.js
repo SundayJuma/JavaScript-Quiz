@@ -4,7 +4,12 @@ $(document).ready(function() {
 
   var score = 0;
 
-  $("#qTwo,#qThree,#qFour,#qFive,#qSix,#qSeven,#qEight,#qNine,#qTen,.result").hide();
+  $("#qOne,#qTwo,#qThree,#qFour,#qFive,#qSix,#qSeven,#qEight,#qNine,#qTen,.result").hide();
+
+  $('#start').click(function() {
+    $('#qOne').show();
+    $('.jumbotron').hide();
+  });
 
   $('#next1').click(function() {
     var q1 = $("input:radio[name=qOne]:checked").val();

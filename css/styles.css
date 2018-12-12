@@ -10,7 +10,7 @@ h1 {
   padding-right: 150px;
 }
 
-form {
+form#details {
   padding-left: 90px;
 }
 
@@ -100,11 +100,12 @@ h6.panel-title {
   font-size: 18px;
   font-weight: normal;
 }
-#quizPage{
-  padding: inherit;
+form#quizPage{
+  background-color: #0f1626;
+  width: 1500px;
+  padding-left: 0px;
 }
 
-}
 
  .panel-default>.panel-heading {
    color: white;
@@ -114,7 +115,7 @@ h6.panel-title {
   background-color: white;
   color: black;
 }
-.panel-heading{
+.panel-heading .panel-footer{
   background-color: #ff533d;
 }
 
@@ -158,8 +159,24 @@ div#youScore {
   right:80%;
   width:50%;
   text-align: center;
+  color: white;
+  background-color: #0f1626;
 }
 
 .questionForm{
   background-color: #0f1626;
+  margin-top: 100px;
+}
+.jumbotron{
+  margin-top: 150px;
+  text-align: center;
+  background-color: #0f1626;
+  color: white;
+}
+#start{
+  padding-left: 8%;
+  padding-right: 12%;
+  font-size: 25px;
+  font-weight: 600;
+
 }
