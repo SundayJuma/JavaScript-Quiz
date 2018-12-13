@@ -1,8 +1,14 @@
 //==== Business logic====//
 
+
+
+var q1, q2, q3,q4,q5,q6,q7,q8,q9,q10;
+
+
+// User Logic
 $(document).ready(function() {
 
-  var score = 0;
+
 
   $("#qOne,#qTwo,#qThree,#qFour,#qFive,#qSix,#qSeven,#qEight,#qNine,#qTen,.result").hide();
 
@@ -55,7 +61,8 @@ $(document).ready(function() {
   $('#next5').click(function() {
     var q5 = $("input:radio[name=qFive]:checked").val();
     $('#qSix').show();
-    $('#qFive').hide();
+    $('#qFive').hide();$("form#quizPage").show(1250);
+    $("#youScore").show(3000);
   });
 
   $('#previous5').click(function() {
@@ -116,31 +123,30 @@ $(document).ready(function() {
 
 
   $("form#quizPage").submit(function(event) {
-    var q1 = $("input:radio[name=qOne]:checked").val();
-    var q2 = $("input:radio[name=qTwo]:checked").val();
-    var q3 = $("input:radio[name=qThree]:checked").val();
-    var q4 = $("input:radio[name=qFour]:checked").val();
-    var q5 = $("input:radio[name=qFive]:checked").val();
-    var q6 = $("input:radio[name=qSix]:checked").val();
-    var q7 = $("input:radio[name=qSeven]:checked").val();
-    var q8 = $("input:radio[name=qEight]:checked").val();
-    var q9 = $("input:radio[name=qNine]:checked").val();
-    var q10 = $("input:radio[name=qTen]:checked").val();
+      q1 = $("input:radio[name=qOne]:checked").val();
+     q2 = $("input:radio[name=qTwo]:checked").val();
+     q3 = $("input:radio[name=qThree]:checked").val();
+     q4 = $("input:radio[name=qFour]:checked").val();
+     q5 = $("input:radio[name=qFive]:checked").val();
+     q6 = $("input:radio[name=qSix]:checked").val();
+     q7 = $("input:radio[name=qSeven]:checked").val();
+     q8 = $("input:radio[name=qEight]:checked").val();
+     q9 = $("input:radio[name=qNine]:checked").val();
+     q10 = $("input:radio[name=qTen]:checked").val();
 
 
-    var youScore = parseInt(q1) + parseInt(q2) + parseInt(q3) + parseInt(q4) + parseInt(q5) + parseInt(q6) + parseInt(q7) + parseInt(q8) + parseInt(q9) + parseInt(q10);
-    if (youScore) {
-      $("#youScore").text("YOU SCORED: " + youScore + " OUT OF 100");
-    } else {
 
-    }
+     var youScore = parseInt(q1) + parseInt(q2) + parseInt(q3) + parseInt(q4) + parseInt(q5) + parseInt(q6) + parseInt(q7) + parseInt(q8) + parseInt(q9) + parseInt(q10);
+     if (youScore) {
+       $("#youScore").text("YOU SCORED: " + youScore + " OUT OF 100");
+     } else {
 
-    //==== User Interface ====//
+     }
 
 
     $("form#quizPage").show(1250);
     $("#youScore").show(3000);
-    event.preventDefault();
+   event.preventDefault();
   });
 
 });
