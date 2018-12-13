@@ -3,8 +3,12 @@
 
 
 var q1, q2, q3,q4,q5,q6,q7,q8,q9,q10;
+var youScore = parseInt(q1) + parseInt(q2) + parseInt(q3) + parseInt(q4) + parseInt(q5) + parseInt(q6) + parseInt(q7) + parseInt(q8) + parseInt(q9) + parseInt(q10);
+if (youScore) {
+  $("#youScore").text("YOU SCORED: " + youScore + "%");
+} else {
 
-
+}
 // User Logic
 $(document).ready(function() {
 
@@ -123,7 +127,7 @@ $(document).ready(function() {
 
 
   $("form#quizPage").submit(function(event) {
-      q1 = $("input:radio[name=qOne]:checked").val();
+     q1 = $("input:radio[name=qOne]:checked").val();
      q2 = $("input:radio[name=qTwo]:checked").val();
      q3 = $("input:radio[name=qThree]:checked").val();
      q4 = $("input:radio[name=qFour]:checked").val();
@@ -134,14 +138,6 @@ $(document).ready(function() {
      q9 = $("input:radio[name=qNine]:checked").val();
      q10 = $("input:radio[name=qTen]:checked").val();
 
-
-
-     var youScore = parseInt(q1) + parseInt(q2) + parseInt(q3) + parseInt(q4) + parseInt(q5) + parseInt(q6) + parseInt(q7) + parseInt(q8) + parseInt(q9) + parseInt(q10);
-     if (youScore) {
-       $("#youScore").text("YOU SCORED: " + youScore + " OUT OF 100");
-     } else {
-
-     }
 
 
     $("form#quizPage").show(1250);
